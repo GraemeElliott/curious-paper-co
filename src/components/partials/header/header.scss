@@ -1,31 +1,64 @@
-.header-top {
+.header {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .header-top-wrapper {
     display: flex;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-};
+    margin-bottom: 1rem;
 
-.logo-img {
-    width:400px; /* you can use % */
-    height: auto;
-};
+    .navbar-text {
+      font-size: 12px;
+    }
 
-.faSearch {
-    margin-right: 10px;
-    font-size: 12px; 
-};
+    .logo-img {
+      width: 22rem;
+      height: auto;
+      margin-right: 4rem;
+    }
 
-.search-text {
-    font-size: 12px;
-};
+    .navbar-search {
+      margin-right: auto;
+      border-bottom: 1px solid black;
+      padding: 0.2rem;
+      padding-right: 6rem;
+    }
 
-.account-links {
-    font-size: 12px;
-    float: right;
-};
+    .faSearch {
+      margin-right: 1rem;
+    }
 
-.navbar-link {
-    margin-left: 3rem;
-};
+    .account-links {
+      margin-left: auto;
+    }
+  }
+
+.navbar-links-wrapper {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .navbar-link {
+    font-size: 11px;
+    font-weight: 500;
+    word-spacing: 0.2rem;
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    &:hover {
+        text-decoration: underline solid 2px black;
+    }
+  }
+
+}

@@ -7,25 +7,35 @@ import "./header.scss";
 
 const Header = () => (
   <div className="header">
-    <div className="header-top">
-      <div className="navbar-search search-text">
-        <FontAwesomeIcon className="faSearch" icon={faSearch} />
+    <div className="header-top-wrapper">
+      <div className="navbar-text navbar-search search-text">
+        <FontAwesomeIcon className="navbar-text faSearch" icon={faSearch} />
         SEARCH
       </div>
       <Link className="logo-container" to="/">
         <img className="logo-img" src={logo} alt="" />
       </Link>
-      <div className="account-links">
-        <Link className="account-link" to="/sign-in">SIGN IN/</Link>
+      <div className="navbar-text account-links">
+        <Link className="account-link" to="/sign-in">SIGN IN</Link>
+        <span> / </span>
         <Link className="account-link" to="/register">REGISTER</Link>
       </div>
     </div>
-    <div className="navbar-links">
-      <Link className="navbar-link" to="/shop">
-        SHOP
+    <div className="navbar-links-wrapper">
+      <Link className="navbar-link" to="/notebooks">
+        NOTEBOOKS
       </Link>
-      <Link className="navbar-link" to="/shop">
-        CONTACT
+      <Link className="navbar-link" to="/diaries-planners">
+        DIARIES / PLANNERS
+      </Link>
+      <Link className="navbar-link" to="/pencils-pens">
+        PENS / PENCILS
+      </Link>
+      <Link className="navbar-link" to="/about-us">
+        ABOUT US
+      </Link>
+      <Link className="navbar-link" to="/contact-us">
+        CONTACT US
       </Link>
     </div>
   </div>
