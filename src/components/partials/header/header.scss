@@ -1,0 +1,31 @@
+.header-top {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    flex-direction: row;
+    align-items: center;
+};
+
+.logo-img {
+    width:400px; /* you can use % */
+    height: auto;
+};
+
+.faSearch {
+    margin-right: 10px;
+    font-size: 12px; 
+};
+
+.search-text {
+    font-size: 12px;
+};
+
+.account-links {
+    font-size: 12px;
+    float: right;
+};
+
+.navbar-link {
+    margin-left: 3rem;
+};
