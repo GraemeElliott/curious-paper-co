@@ -1,5 +1,4 @@
 .text-category-panel {
-  border: 1px solid black;
   width: 635px;
   height: 780px;
   display: flex;
@@ -7,6 +6,10 @@
   align-items: center;
   justify-content: center;
   margin: 0px;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   .text-cat-header-1 {
     font-size: 10px;
@@ -21,8 +24,8 @@
     margin-top: 10px;
   }
 
-  button {
-    border: 1.5px solid black;
+  .text-cat-link {
+    border: 1.5px solid;
     padding: 0.8rem;
     background-color: transparent;
     font-family: inherit;
@@ -30,5 +33,10 @@
     font-size: 12px;
     letter-spacing: 0.1rem;
     text-decoration: none;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
   }
 }

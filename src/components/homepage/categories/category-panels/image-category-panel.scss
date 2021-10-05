@@ -1,0 +1,39 @@
+.image-category-panel {
+  width: 635px;
+  height: 780px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  background-image: url(../../../../assets/homepage-panel-images/archer-&-olive.jpg);
+
+  .titles {
+    margin-top: auto;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .image-cat-header-1 {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    margin-bottom: 0rem;
+  }
+
+  .image-cat-header-2 {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 0.2rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

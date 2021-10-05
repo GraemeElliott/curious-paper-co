@@ -8,7 +8,7 @@ const Categories = () => {
   return (
     <div className="categories-wrapper">
       <TextCategoryPanel></TextCategoryPanel>
-      <TextCategoryPanel></TextCategoryPanel>
+      <ImageCategoryPanel></ImageCategoryPanel>
       <TextCategoryPanel></TextCategoryPanel>
       <TextCategoryPanel></TextCategoryPanel>
       <TextCategoryPanel></TextCategoryPanel>
