@@ -7,7 +7,7 @@ const TextCategoryPanel = () => {
     <div className="text-category-panel">
         <p className="text-cat-header-1">FOR DOODLING & SCRIBBLING</p>
         <p className="text-cat-header-2"> Notebooks - Autumnal Collection </p>
-        <p className="text-cat-link">SHOP NOW</p>
+        <Link className="text-cat-link">SHOP NOW</Link>
     </div>
   );
 };

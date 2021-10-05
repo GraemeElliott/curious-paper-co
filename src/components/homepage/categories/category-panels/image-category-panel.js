@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./image-category-panel.scss";
 
 const ImageCategoryPanel = () => {
@@ -6,7 +7,7 @@ const ImageCategoryPanel = () => {
     <div className="image-category-panel">
       <div className="titles">
         <p className="image-cat-header-1">ARCHER & OLIVE</p>
-        <p className="image-cat-header-2"> SHOW NOW </p>
+        <Link className="image-cat-header-2"> SHOW NOW </Link>
       </div>
     </div>
   );

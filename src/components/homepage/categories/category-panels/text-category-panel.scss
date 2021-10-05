@@ -25,7 +25,7 @@
   }
 
   .text-cat-link {
-    border: 1.5px solid;
+    border: 1.5px solid black;
     padding: 0.8rem;
     background-color: transparent;
     font-family: inherit;
@@ -33,10 +33,5 @@
     font-size: 12px;
     letter-spacing: 0.1rem;
     text-decoration: none;
-
-    &:hover {
-      background-color: black;
-      color: white;
-    }
   }
 }
