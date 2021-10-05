@@ -1,20 +1,20 @@
 import React from "react";
-import './categories.css';
+import "./categories.scss";
 
-import CategoryPanel from "./category-panel";
+import ImageCategoryPanel from "./category-panels/image-category-panel";
+import TextCategoryPanel from "./category-panels/text-category-panel";
 
 const Categories = () => {
-    return (
-        <div className="categories-wrapper">
-            <p>AAAAAAAAAAA</p>
-            <CategoryPanel></CategoryPanel>
-            <CategoryPanel></CategoryPanel>
-            <CategoryPanel></CategoryPanel>
-            <CategoryPanel></CategoryPanel>
-            
-        </div>
-    )
-
+  return (
+    <div className="categories-wrapper">
+      <TextCategoryPanel></TextCategoryPanel>
+      <TextCategoryPanel></TextCategoryPanel>
+      <TextCategoryPanel></TextCategoryPanel>
+      <TextCategoryPanel></TextCategoryPanel>
+      <TextCategoryPanel></TextCategoryPanel>
+      <TextCategoryPanel></TextCategoryPanel>
+    </div>
+  );
 };
 
 export default Categories;

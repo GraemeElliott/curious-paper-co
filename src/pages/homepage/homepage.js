@@ -1,5 +1,7 @@
 import React from "react";
 import Header from '../../components/partials/header/header';
+import Footer from "../../components/partials/footer/footer";
+
 import Categories from "../../components/homepage/categories/categories";
 
 const Index = () => {
@@ -7,6 +9,7 @@ const Index = () => {
         <div className="page-wrapper">
             <Header />
             <Categories />
+            <Footer />
 
             
 
