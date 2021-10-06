@@ -1,10 +1,14 @@
+.category-panel-wrapper {
+  margin: 0rem;
+}
+
 .image-category-panel {
-  width: 635px;
+  width: 630px;
   height: 780px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0px;
+  margin: 0rem;
 
   &:hover {
     cursor: pointer;
