@@ -1,0 +1,40 @@
+.products-directory-item {
+  width: 580px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  background-position: center;
+  background-size: cover;
+
+  &:hover {
+    cursor: pointer;
+  }
+  
+  .titles {
+    margin-top: auto;
+    margin-left: 1.0rem;
+    margin-bottom: 1.0rem;
+  }
+
+  .category {
+    color: white;
+    font-size: 10px;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    margin-bottom: 0rem;
+    text-transform: uppercase;
+  }
+
+  .shop-now-link {
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      margin-top: 0.2rem;
+      text-transform: uppercase;
+  
+      &:hover {
+        text-decoration: underline;
+      }    
+  }
+}

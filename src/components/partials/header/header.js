@@ -22,14 +22,8 @@ const Header = () => (
       </div>
     </div>
     <div className="navbar-links-wrapper">
-      <Link className="navbar-link" to="/notebooks">
-        NOTEBOOKS
-      </Link>
-      <Link className="navbar-link" to="/diaries-planners">
-        DIARIES / PLANNERS
-      </Link>
-      <Link className="navbar-link" to="/pencils-pens">
-        PENS / PENCILS
+      <Link className="navbar-link" to="/products">
+        PRODUCTS
       </Link>
       <Link className="navbar-link" to="/about-us">
         ABOUT US
