@@ -12,27 +12,25 @@ class ProductsDirectory extends React.Component {
         {
           category: "Notebooks",
           imageUrl: "https://i.ibb.co/XbRPD1n/notebooks.jpg",
-          size: "large",
-          id: "notebooks",
+          pageId: "notebooks",
           linkUrl: "products/notebooks",
         },
         {
           category: "Washi Tape",
           imageUrl: "https://i.ibb.co/0cSrqt5/washi-tape.jpg",
-          id: "washi-tape",
+          pageId: "washi-tape",
           linkUrl: "products/washi-tape",
         },
         {
           category: "Pens and Pencils",
           imageUrl: "https://i.ibb.co/vPNCzfM/pens-pencils.jpg",
-          id: "pens-pencils",
+          pageId: "pens-pencils",
           linkUrl: "products/pens-pencils",
         },
         {
           category: "Prints and Accessories",
           imageUrl: "https://i.ibb.co/KXS7D4R/prints-accessories.jpg",
-          size: "large",
-          id: "prints-accessories",
+          pageId: "prints-accessories",
           linkUrl: "products/prints-accessories",
         },
       ],
@@ -42,8 +40,8 @@ class ProductsDirectory extends React.Component {
   render() {
     return (
       <div className="product-directory-menu">
-        {this.state.productCategories.map(({ category , imageUrl, id, size }) => (
-          <ProductsDirectoryItem key={id} category={category} imageUrl={imageUrl} size={size} id={id} />
+        {this.state.productCategories.map(({ category , imageUrl, pageId, linkUrl }) => (
+          <ProductsDirectoryItem key={pageId} category={category} imageUrl={imageUrl} linkUrl={linkUrl} pageId={pageId} />
         ))}
       </div>
     );

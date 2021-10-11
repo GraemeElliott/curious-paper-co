@@ -35,7 +35,7 @@ class HomepageMainContent extends React.Component {
           imageUrl: "",
           panelFormat: "text",
           panelId: "panel-3",
-          linkId: "archer-and-olive",
+          linkId: "panel-3",
           colourScheme: "light",
           backgroundColour:""
         },
@@ -45,7 +45,7 @@ class HomepageMainContent extends React.Component {
           imageUrl: "",
           panelFormat: "text",
           panelId: "panel-4",
-          linkId: "archer-and-olive",
+          linkId: "panel-4",
           colourScheme: "light",
           backgroundColour:""
         },
@@ -55,7 +55,7 @@ class HomepageMainContent extends React.Component {
           imageUrl: "",
           panelFormat: "text",
           panelId: "panel-5",
-          linkId: "archer-and-olive",
+          linkId: "panel-5",
           colourScheme: "light",
           backgroundColour:""
         },
@@ -65,7 +65,7 @@ class HomepageMainContent extends React.Component {
           imageUrl: "",
           panelFormat: "text",
           panelId: "panel-6",
-          linkId: "archer-and-olive",
+          linkId: "panel-6",
           colourScheme: "light",
           backgroundColour:""
         },
@@ -78,13 +78,9 @@ class HomepageMainContent extends React.Component {
       <div className="main-content-wrapper">
         {this.state.mainContentPanels.map(({ title , subtitle, imageUrl, panelFormat, panelId, linkId, colourScheme, backgroundColour}) => (
           panelFormat === "text" ?
-          <div>
           <TextPanel key={linkId} title={title} subtitle={subtitle} imageUrl={imageUrl} panelFormat={panelFormat} panelId={panelId} linkId={linkId} colourScheme={colourScheme} backgroundColour={backgroundColour} />
-          </div>
           :
-          <div>
           <ImagePanel key={linkId} title={title} subtitle={subtitle} imageUrl={imageUrl} panelFormat={panelFormat} panelId={panelId} linkId={linkId} colourScheme={colourScheme} backgroundColour={backgroundColour} />
-          </div>
         ))}
       </div>
     );

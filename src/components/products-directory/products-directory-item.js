@@ -1,24 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import "./products-directory-item.scss";
 
-const ProductsDirectoryItem = ({ category, imageUrl, id }) => {
+const ProductsDirectoryItem = ({ category, imageUrl, pageId, history, match }) => {
   return (
-    <Link
+    <div
       className="products-directory-item"
       style={{
         backgroundImage: `url(${imageUrl})`,
       }}
-      to={`${id}`}
+      onClick={() => history.push(`${match.url}/${pageId}`)}
     >
       <div className="titles">
-        <h1 className="category">{category}</h1>
-        <Link className="shop-now-link" to={`${id}`}>
+        <h3 className="category">{category}</h3>
+        <h3 className="shop-now-link">
           SHOP NOW
-        </Link>
+        </h3>
       </div>
-    </Link>
+    </div>
   );
 };
 
-export default ProductsDirectoryItem;
+export default withRouter (ProductsDirectoryItem);

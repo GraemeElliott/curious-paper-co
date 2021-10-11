@@ -8,7 +8,7 @@ const TextPanel = ({ title , subtitle, imageUrl, linkId, colourScheme, backgroun
         <h3 className={`title text-subtitle ${colourScheme}`}>{subtitle}</h3>
         <h1 className={`title text-title ${colourScheme}`}> {title} </h1>
 
-        <Link className={`button text-shop-button ${colourScheme}`} to={`products/${linkId}`}>SHOP NOW</Link>
+        <div className={`button text-shop-button ${colourScheme}`}>SHOP NOW</div>
     </Link>
   );
 };
@@ -19,9 +19,9 @@ const ImagePanel = ({ title , subtitle, imageUrl, linkId, colourScheme }) => {
         backgroundImage: `url(${imageUrl})`,
       }}
       to={`products/${linkId}`}>
-        <div className="titles">
+        <div className="image-panel-titles">
           <h3 className={`title image-title ${colourScheme}`}>{title}</h3>
-          <Link className={`title image-shop-link ${colourScheme}`} to={`products/${linkId}`}>SHOP NOW</Link>
+          <h3 className={`title image-shop-link ${colourScheme}`}>SHOP NOW</h3>
         </div>
       </Link>
     );
