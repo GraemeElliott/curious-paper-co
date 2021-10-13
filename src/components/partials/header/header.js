@@ -16,9 +16,7 @@ const Header = () => (
         <img className="logo-img" src={logo} alt="" />
       </Link>
       <div className="navbar-text account-links">
-        <Link className="account-link" to="/sign-in">SIGN IN</Link>
-        <span> / </span>
-        <Link className="account-link" to="/register">REGISTER</Link>
+        <Link className="account-link" to="/sign-in">SIGN IN / REGISTER</Link>
       </div>
     </div>
     <div className="navbar-links-wrapper">
