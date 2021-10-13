@@ -7,19 +7,43 @@ import Homepage from "./pages/homepage/homepage";
 import SignInPage from "./pages/account/sign-in-register/sign-in";
 import ProductsPage from "./pages/products-directory/products-directory";
 
-const App = () => {
-  return (
-    <BrowserRouter>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route exact path="/sign-in" component={SignInPage} />
-        <Route exact path="/products" component={ProductsPage} />
-        {/* <Route path="/products/id" component={} /> */}
-      </Switch>
-      <Footer />
-    </BrowserRouter>
-  );
-};
+import { auth } from "./firebase/firebase.utils";
+
+class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      currentUser: null,
+    };
+  }
+
+  unsubscribeFromAuth = null;
+
+  componentDidMount() {
+    auth.onAuthStateChanged((user) => {
+      this.setState({ currentUser: user });
+    });
+  }
+
+  componentWillUnmount() {
+    this.unsubscribeFromAuth();
+  }
+
+  render() {
+    return (
+      <BrowserRouter>
+        <Header currentUser={this.state.currentUser}/>
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/sign-in" component={SignInPage} />
+          <Route exact path="/products" component={ProductsPage} />
+          {/* <Route path="/products/id" component={} /> */}
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    );
+  }
+}
 
 export default App;

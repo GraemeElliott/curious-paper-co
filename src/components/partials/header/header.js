@@ -4,8 +4,9 @@ import logo from "../../../assets/cpc-logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "./header.scss";
+import { auth } from '../../../firebase/firebase.utils';
 
-const Header = () => (
+const Header = ({ currentUser }) => (
   <div className="header">
     <div className="header-top-wrapper">
       <div className="navbar-text navbar-search search-text">
@@ -16,7 +17,14 @@ const Header = () => (
         <img className="logo-img" src={logo} alt="" />
       </Link>
       <div className="navbar-text account-links">
+        {
+          currentUser ?
+        
+        <div className="account-link sign-out" onClick={() => auth.signOut()}>SIGN OUT </div>
+        :
         <Link className="account-link" to="/sign-in">SIGN IN / REGISTER</Link>
+        }
+
       </div>
     </div>
     <div className="navbar-links-wrapper">
