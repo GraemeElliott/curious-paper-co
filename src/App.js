@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
 import "./App.css";
 import { connect } from "react-redux";
 import Header from "./components/partials/header/header";
@@ -43,7 +43,7 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/sign-in" component={SignInPage} />
+          <Route exact path="/sign-in" render={() => this.props.currentUser ? (<Redirect to='/' />) : (<SignInPage />)} />
           <Route exact path="/products" component={ProductsPage} />
           {/* <Route path="/products/id" component={} /> */}
         </Switch>
@@ -51,10 +51,14 @@ class App extends React.Component {
       </BrowserRouter>
     );
   }
-}
+};
+
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser
+});
 
 const mapDispatchToProps = (dispatch) => ({
   setCurrentUser: (user) => dispatch(setCurrentUser(user)),
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
