@@ -1,9 +1,7 @@
-.sign-in-form {
-    width: 40vh;
+.sign-in-register-forms {
+    width: auto;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 
-    h2 {
-        text-align: center;
-    }
+
 }
