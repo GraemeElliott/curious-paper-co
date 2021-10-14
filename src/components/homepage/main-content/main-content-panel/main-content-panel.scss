@@ -1,5 +1,23 @@
-.red {
-  background-color: #D7816A;
+$blue: #449dd1;
+$brown: #CAB79B;
+$dark-blue: #2C365E;
+$dark-red: #653239;
+
+
+.blue {
+  background-color: $blue;
+};
+
+.dark-blue {
+  background-color: $dark-blue;
+};
+
+.brown {
+  background-color: $brown;
+};
+
+.dark-red {
+  background-color: $dark-red;
 };
 
 .panel-wrapper {
@@ -107,3 +125,12 @@
     text-decoration: underline;
   }
 }
+
+@media only screen and (max-width: 1308px) {
+  .panel-wrapper {
+    max-width: 38vh;
+    max-height: 45vh;
+
+  }  
+}
+

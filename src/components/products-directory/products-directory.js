@@ -16,6 +16,12 @@ class ProductsDirectory extends React.Component {
           linkUrl: "products/notebooks",
         },
         {
+          category: "Diaries & Planners",
+          imageUrl: "https://i.ibb.co/xsbLmg8/hope-house-press-leather-diary-studio-PJzc7-LOt2-Ig-unsplash.jpg",
+          pageId: "diaries-planners",
+          linkUrl: "diaries-planners",
+        },
+        {
           category: "Washi Tape",
           imageUrl: "https://i.ibb.co/0cSrqt5/washi-tape.jpg",
           pageId: "washi-tape",
@@ -28,11 +34,17 @@ class ProductsDirectory extends React.Component {
           linkUrl: "products/pens-pencils",
         },
         {
+          category: "Desk Items",
+          imageUrl: "https://i.ibb.co/t4CHCq2/kari-shea-t-OVmshavtoo-unsplash.jpg",
+          pageId: "desk-items",
+          linkUrl: "products/desk-items",
+        },
+        {
           category: "Prints and Accessories",
           imageUrl: "https://i.ibb.co/KXS7D4R/prints-accessories.jpg",
           pageId: "prints-accessories",
           linkUrl: "products/prints-accessories",
-        },
+        }
       ],
     };
   }

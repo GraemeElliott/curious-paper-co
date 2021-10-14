@@ -7,3 +7,9 @@ div {
     flex-wrap: wrap;
     flex-direction: row;
 }
+
+@media only screen and (max-width: 1308px) {
+    .main-content-wrapper {
+        max-width: 100vh;
+    }  
+}
