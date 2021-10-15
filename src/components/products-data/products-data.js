@@ -60,7 +60,7 @@ const ShopData = [
       routeName: 'washi-tape',
       items: [
         {
-          id: 1,
+          id: 5,
           name: 'Japanese Washi Tape Set',
           imageUrl: 'https://i.ibb.co/rxYR84T/japanesewash.jpg',
           description: 'Test description',
@@ -72,7 +72,7 @@ const ShopData = [
           price: 5
         },
         {
-          id: 2,
+          id: 6,
           name: 'Night Sky',
           imageUrl: 'https://i.ibb.co/x6mjRQm/nightskywash.jpg',
           description: 'Test description',
@@ -84,7 +84,7 @@ const ShopData = [
           price: 5
         },
         {
-          id: 3,
+          id: 7,
           name: 'Josephine Ung for Archer & Olive',
           imageUrl: 'https://i.ibb.co/fnmSfvT/washi1.jpg',
           description: 'Test description',
@@ -96,7 +96,7 @@ const ShopData = [
           price: 5
         },
         {
-          id: 4,
+          id: 8,
           name: 'Harvest Memories',
           imageUrl: 'https://i.ibb.co/Hd6WBw3/washiset-Harvest-Memories.jpg',
           description: 'Test description',
@@ -110,7 +110,7 @@ const ShopData = [
       ]
     },
     {
-      id: 3,
+      id: 9,
       title: 'Pens and Pencils',
       routeName: 'pens-pencils',
       items: [
@@ -127,7 +127,7 @@ const ShopData = [
           price: 25
         },
         {
-          id: 2,
+          id: 10,
           name: 'Fountain Pen',
           imageUrl: 'https://i.ibb.co/YWqgvq4/parker.png',
           description: 'Test description',
@@ -139,7 +139,7 @@ const ShopData = [
           price: 25
         },
         {
-          id: 3,
+          id: 11,
           name: '9000 Art Set',
           imageUrl: 'https://i.ibb.co/6RZXdwD/81-BGwe9ph2-L-AC-SL1500.jpg',
           description: 'Test description',
@@ -151,7 +151,7 @@ const ShopData = [
           price: 25
         },
         {
-          id: 4,
+          id: 12,
           name: 'Micron Pigma 6 Fineliners + 1 Brush Pen Pack',
           imageUrl: 'https://i.ibb.co/Nth0CVL/Sakura.jpg',
           description: 'Test description',
@@ -170,7 +170,7 @@ const ShopData = [
       routeName: 'prints-accessories',
       items: [
         {
-          id: 1,
+          id: 13,
           name: 'Dracula Print',
           imageUrl: 'https://i.ibb.co/PCgDpH1/IGP-STO-1-4a344067-ee71-49c0-841b-51a5e15092c1-628x784.jpg',
           description: 'Test description',
@@ -182,7 +182,7 @@ const ShopData = [
           price: 25
         },
         {
-          id: 2,
+          id: 14,
           name: 'Edgar Allan Poe Print',
           imageUrl: 'https://i.ibb.co/ZGfR8zg/il-794x-N-1255279110-l30y.jpg',
           description: 'Test description',
@@ -194,7 +194,7 @@ const ShopData = [
           price: 25
         },
         {
-          id: 3,
+          id: 15,
           name: 'Bunny Tote Bag',
           imageUrl: 'https://i.ibb.co/6R7cW4b/il-794x-N-2652573451-54xa.jpg',
           description: 'Test description',
@@ -206,7 +206,7 @@ const ShopData = [
           price: 5
         },
         {
-          id: 4,
+          id: 16,
           name: 'Too Many Books Tote Bag',
           imageUrl: 'https://i.ibb.co/FxMfKy5/il-794x-N-2881227458-fcv8.jpg',
           description: 'Test description',

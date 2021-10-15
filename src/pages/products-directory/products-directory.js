@@ -2,7 +2,7 @@ import React from "react";
 import "./products-directory.scss";
 import ProductsDirectory from "../../components/products-directory/products-directory";
 
-const ProductsPage = () => {
+const ProductsDirectoryPage = () => {
   return (
     <div>
         <ProductsDirectory />
@@ -10,4 +10,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default ProductsDirectoryPage;
