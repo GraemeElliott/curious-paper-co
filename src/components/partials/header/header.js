@@ -4,8 +4,10 @@ import { connect } from "react-redux";
 import logo from "../../../assets/cpc-logo.jpg";
 import "./header.scss";
 import { auth } from '../../../firebase/firebase.utils';
+import CartIcon from "../../cart/cart-icon/cart-icon";
+import CartDropdown from "../../cart/cart-dropdown/cart-dropdown";
 
-const Header = ({ currentUser }) => (
+const Header = ({ currentUser, hidden }) => (
   <div className="header">
     <div className="header-top-wrapper">
       <div className="psudo-div"></div>
@@ -20,8 +22,9 @@ const Header = ({ currentUser }) => (
         :
         <Link className="account-link" to="/sign-in">SIGN IN / REGISTER</Link>
         }
-
+        <CartIcon />
       </div>
+      {hidden ? null : <CartDropdown />}
     </div>
     <div className="navbar-links-wrapper">
       <Link className="navbar-link" to="/products">
@@ -37,8 +40,9 @@ const Header = ({ currentUser }) => (
   </div>
 );
 
-const mapStateToProps = state => ({
-  currentUser: state.user.currentUser
+const mapStateToProps = ({user: {currentUser}, cart: { hidden }}) => ({
+  currentUser,
+  hidden
 });
 
 export default connect(mapStateToProps)(Header);
