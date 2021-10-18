@@ -6,7 +6,7 @@ const ShopData = [
       items: [
         {
           id: 1,
-          name: 'Lucky Rabbit Dot Grid Notebook',
+          productName: 'Lucky Rabbit Dot Grid Notebook',
           imageUrl: 'https://i.ibb.co/QfpjK7P/Lucky-Rabbit.jpg',
           description: 'Test description',
           brand: 'Archer & Olive',
@@ -18,7 +18,7 @@ const ShopData = [
         },
         {
           id: 2,
-          name: 'Deep Green',
+          productName: 'Deep Green',
           imageUrl: 'https://i.ibb.co/Brywf30/Deep-Green.jpg',
           description: 'Test description',
           brand: 'Archer & Olive',
@@ -30,7 +30,7 @@ const ShopData = [
         },
         {
           id: 3,
-          name: 'Clever Fox',
+          productName: 'Clever Fox',
           imageUrl: 'https://i.ibb.co/vjtLgWh/Clever-Fox.jpg',
           description: 'Test description',
           brand: 'Archer & Olive',
@@ -42,7 +42,7 @@ const ShopData = [
         },
         {
           id: 4,
-          name: 'Crescent Moon',
+          productName: 'Crescent Moon',
           imageUrl: 'https://i.ibb.co/jzDZwXT/Crescent-Moon.jpg',
           description: 'Test description',
           brand: 'Archer & Olive',
@@ -61,7 +61,7 @@ const ShopData = [
       items: [
         {
           id: 5,
-          name: 'Japanese Washi Tape Set',
+          productName: 'Japanese Washi Tape Set',
           imageUrl: 'https://i.ibb.co/rxYR84T/japanesewash.jpg',
           description: 'Test description',
           brand: 'J-Tape',
@@ -73,7 +73,7 @@ const ShopData = [
         },
         {
           id: 6,
-          name: 'Night Sky',
+          productName: 'Night Sky',
           imageUrl: 'https://i.ibb.co/x6mjRQm/nightskywash.jpg',
           description: 'Test description',
           brand: 'DSstyles',
@@ -85,7 +85,7 @@ const ShopData = [
         },
         {
           id: 7,
-          name: 'Josephine Ung for Archer & Olive',
+          productName: 'Josephine Ung for Archer & Olive',
           imageUrl: 'https://i.ibb.co/fnmSfvT/washi1.jpg',
           description: 'Test description',
           brand: 'Archer & Olive',
@@ -97,7 +97,7 @@ const ShopData = [
         },
         {
           id: 8,
-          name: 'Harvest Memories',
+          productName: 'Harvest Memories',
           imageUrl: 'https://i.ibb.co/Hd6WBw3/washiset-Harvest-Memories.jpg',
           description: 'Test description',
           brand: 'Archer & Olive',
@@ -116,7 +116,7 @@ const ShopData = [
       items: [
         {
           id: 1,
-          name: 'Ballpoint Pen',
+          productName: 'Ballpoint Pen',
           imageUrl: 'https://i.ibb.co/WKgHsnV/lamy-ball.png',
           description: 'Test description',
           brand: 'Lamy',
@@ -128,7 +128,7 @@ const ShopData = [
         },
         {
           id: 10,
-          name: 'Fountain Pen',
+          productName: 'Fountain Pen',
           imageUrl: 'https://i.ibb.co/YWqgvq4/parker.png',
           description: 'Test description',
           brand: 'Parker',
@@ -140,7 +140,7 @@ const ShopData = [
         },
         {
           id: 11,
-          name: '9000 Art Set',
+          productName: '9000 Art Set',
           imageUrl: 'https://i.ibb.co/6RZXdwD/81-BGwe9ph2-L-AC-SL1500.jpg',
           description: 'Test description',
           brand: 'Castell',
@@ -152,7 +152,7 @@ const ShopData = [
         },
         {
           id: 12,
-          name: 'Micron Pigma 6 Fineliners + 1 Brush Pen Pack',
+          productName: 'Micron Pigma 6 Fineliners + 1 Brush Pen Pack',
           imageUrl: 'https://i.ibb.co/Nth0CVL/Sakura.jpg',
           description: 'Test description',
           brand: 'Sakura',
@@ -171,7 +171,7 @@ const ShopData = [
       items: [
         {
           id: 13,
-          name: 'Dracula Print',
+          productName: 'Dracula Print',
           imageUrl: 'https://i.ibb.co/PCgDpH1/IGP-STO-1-4a344067-ee71-49c0-841b-51a5e15092c1-628x784.jpg',
           description: 'Test description',
           brand: 'Horror Prints',
@@ -183,7 +183,7 @@ const ShopData = [
         },
         {
           id: 14,
-          name: 'Edgar Allan Poe Print',
+          productName: 'Edgar Allan Poe Print',
           imageUrl: 'https://i.ibb.co/ZGfR8zg/il-794x-N-1255279110-l30y.jpg',
           description: 'Test description',
           brand: 'Horror Prints',
@@ -195,7 +195,7 @@ const ShopData = [
         },
         {
           id: 15,
-          name: 'Bunny Tote Bag',
+          productName: 'Bunny Tote Bag',
           imageUrl: 'https://i.ibb.co/6R7cW4b/il-794x-N-2652573451-54xa.jpg',
           description: 'Test description',
           brand: 'Tote Bag Store',
@@ -207,7 +207,7 @@ const ShopData = [
         },
         {
           id: 16,
-          name: 'Too Many Books Tote Bag',
+          productName: 'Too Many Books Tote Bag',
           imageUrl: 'https://i.ibb.co/FxMfKy5/il-794x-N-2881227458-fcv8.jpg',
           description: 'Test description',
           brand: 'Literary Club',

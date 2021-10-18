@@ -5,7 +5,7 @@ import CustomButton from "../../global-components/customer-button/custom-button"
 import { addItem } from "../../../redux/cart/cart.actions";
 
 const ProductsItem = ({ item, addItem }) => {
-  const {name, price, imageUrl } = item;
+  const {productName, price, imageUrl } = item;
 
   return (
     <div className='products-item'>
@@ -16,7 +16,7 @@ const ProductsItem = ({ item, addItem }) => {
       }}
     />
     <div className='products-footer'>
-      <span className='name'>{name}</span>
+      <span className='name'>{productName}</span>
       <span className='price'>{price}</span>
     </div>
     <CustomButton onClick={() => addItem(item)} inverted> ADD TO CART </CustomButton>
