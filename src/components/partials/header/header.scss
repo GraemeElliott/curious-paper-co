@@ -1,0 +1,67 @@
+.header {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .header-top-wrapper {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."; 
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  
+    .header-text {
+      font-size: 12px;
+    }
+  
+    .logo-img {
+      width: 26rem;
+      height: auto;
+    }
+  
+    .account-links-wrapper {
+      margin-left: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  .header-bottom-wrapper {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  .header-link {
+    font-size: 12px;
+    font-weight: 500;
+    word-spacing: 0.2rem;
+  
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+  
+    &:hover {
+        text-decoration: underline solid 2px black;
+    }
+  }
+  
+  }
+  
+  .sign-out {
+  cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .header {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
