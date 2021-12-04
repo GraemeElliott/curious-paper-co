@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/cpc-logo.jpg";
-import './footer.scss';
+import './footer.component.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <footer className="footer">
 
-          <div className="footer-col1">
+          <div className="footer-info">
             <Link className="logo-wrapper-footer" to="/">
               <img className="logo-img-footer" src={logo} alt="" />
             </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
             </li>
 
             <li className="nav-item">
-              <h2 class="nav-title">About</h2>
+              <h2 className="nav-title">About</h2>
 
               <ul className="nav-ul">
                 <li>
@@ -67,7 +67,7 @@ const Footer = () => {
             <li className="nav-item">
               <h2 className="nav-title">Media</h2>
 
-              <ul class="nav-ul">
+              <ul className="nav-ul">
                 <li>
                   <a href="/">Online</a>
                 </li>
@@ -101,7 +101,7 @@ const Footer = () => {
               </ul>
             </li>
           </ul>        
-          <div class="legal">
+          <div className="legal">
             <p>&copy; {new Date().getFullYear()} The Curious Paper Co. All rights reserved.</p>
           </div>
          
