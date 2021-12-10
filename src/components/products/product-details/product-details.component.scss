@@ -2,17 +2,25 @@
     width: 100%;
     height: 800px;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
     flex-direction: row;
-    align-items: flex-start;
     margin: 0rem;
     background-position: center;
     background-size: cover;
   
     .product-image {
-      width: 60%;
+      width: 67%;
       height: 95%;
       background-size: cover;
       background-position: center;
       margin-bottom: 1rem;
+      float: left;
+    }
+
+    .product-details {
+      width: 33%;
+      margin-left: 10rem;
     }
 };

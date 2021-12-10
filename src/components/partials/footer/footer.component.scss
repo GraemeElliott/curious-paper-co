@@ -6,7 +6,6 @@
     display: -ms-flex;
     flex-flow: row wrap;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
     margin-top: 5rem;
     margin-bottom: 1rem;
     position: absolute;
@@ -22,6 +21,7 @@
   
     a {
       text-decoration: none;
+      font-size: 12px;
     }
   }
   
@@ -38,9 +38,10 @@
   }
   
   .bio-footer {
-    max-width: 20rem;
+    max-width: 23rem;
     margin-bottom: 1.5rem;
-    margin-left: 0.6rem;
+    margin-left: 0.2rem;
+    font-size: 14px;
   }
   
   .social-icons {
@@ -53,11 +54,12 @@
   
   .footer-nav {
     display: flex;
-      flex-flow: row wrap;
+    flex-flow: row wrap;
   }
   
   .nav-title {
     font-size: 12px;
+    text-transform: uppercase;
     font-weight: 500;
     margin-top: 1.5rem;
   }
@@ -69,6 +71,10 @@
   .legal {
     display: flex;
     justify-content: center;
+
+    p {
+      font-size: 12px;
+    }
   }
   
   .footer-info {
@@ -83,25 +89,3 @@
   .footer-nav {
     flex: 2;
   }
-  
-  @media screen and (max-width: 1440px) {
-    .bio-footer {
-      max-width: 20rem;
-    }
-  }
-  
-  @media screen and (max-width: 1024px) {
-  
-    .footer-nav > * {
-      margin-left: 3rem;
-    }
-  
-    img {
-      margin-left: 0.5rem;
-    }
-  
-    .social-icons {
-      margin-left: 0.3rem;
-    }
-  }
-  

@@ -8,8 +8,8 @@ const ProductDetails = () => {
         style={{
             backgroundImage: 'url("https://i.ibb.co/QfpjK7P/Lucky-Rabbit.jpg")'}}/>
 
-            <div >
-                <div> Product Name </div>
+            <div className="product-details" >
+                <div> Product Name with a long name like this one and then some </div>
                 <div> Brand </div>
                 <div> Price </div>
                 <div> Qty </div>
