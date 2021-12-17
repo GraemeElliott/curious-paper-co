@@ -3,17 +3,27 @@ import { Link } from "react-router-dom";
 import logo from "../../../assets/cpc-logo.jpg";
 import "./header.component.scss";
 
+import { Badge } from "@mui/material";
+import { Search, ShoppingCartOutlined } from "@mui/icons-material";
+
 const Header = () => (
-  <div className="header">
+  <div className="header-container">
     <div className="header-top-wrapper">
-      <div className="search-bar header-text"> Search </div>
+      <div className="search-bar">
+        <Search className="search-icon"/>
+        <div className="search-text header-text"> Search </div>
+      </div>
       <Link className="logo-wrapper" to="/">
         <img className="logo-img" src={logo} alt="" />
       </Link>
       <div className="account-links-wrapper header-text">
         <Link className="account-link" to="/sign-in">SIGN IN / REGISTER</Link>
+        <Badge className="cart-icon" badgeContent={4} color="primary">
+            <ShoppingCartOutlined color="action" />
+        </Badge>
       </div>
     </div>
+    
     <div className="header-bottom-wrapper">
       <Link className="header-link" to="/products">
         PRODUCTS

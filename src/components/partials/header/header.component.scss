@@ -1,49 +1,60 @@
-.header {
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+.header-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 
   .header-top-wrapper {
     display: flex;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
-    flex-direction: row;
-    align-items: center;
     margin-bottom: 1rem;
+    align-items: center;
   }
 
-  .search-bar, .account-link {
+  .search-bar, .logo-wrapper, .account-links {
     flex: 1;
+  }
+
+  .search-bar {
     display: flex;
-    font-size: 12px;
+    align-items: center;
+
+    .search-icon {
+      margin-right: 0.3rem;
+    }
   }
 
   .logo-img {
     width: 26rem;
     height: auto;
-    margin-right: 25rem;
+    margin-right: 22rem;
   }
 
-.header-bottom-wrapper {
-display: flex;
-display: -webkit-flex;
-display: -moz-flex;
-display: -ms-flex;
-flex-direction: row;
-justify-content: center;
-
-.header-link {
-  font-size: 12px;
-  font-weight: 500;
-  word-spacing: 0.2rem;
-
-  &:not(:last-child) {
-      margin-right: 2rem;
+  .account-link {
+    margin-right: 1rem;
   }
 
-  &:hover {
-      text-decoration: underline solid 2px lightgray;
+  .header-bottom-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    .header-link {
+      font-size: 12px;
+      font-weight: 500;
+      word-spacing: 0.2rem;
+    
+      &:not(:last-child) {
+          margin-right: 2rem;
       }
-    }
-  }
+    
+      &:hover {
+          text-decoration: underline solid 2px lightgray;
+          }
+        }
+      }
+
 }
