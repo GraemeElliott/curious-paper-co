@@ -18,13 +18,11 @@ const OrderSummaryComponent = () => {
                 <h2 className="order-summary-subtitle"> Shipping: </h2>
                 <h2 className="shipping-amount order-summary-amount"> £30.00 </h2>
             </div>
-        </div>
             <div className="order-total-wrapper order-details ">
                 <h2 className="order-summary-subtitle"> Total: </h2>
                 <h2 className="total-amount order-summary-amount"> £35.00 </h2>
             </div>
-
-
+        </div>
         <CustomButton className="custom-button checkout-button"> Checkout</CustomButton>
 
     </div>       

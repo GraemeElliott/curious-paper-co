@@ -20,7 +20,7 @@ const CartItemComponent = () => {
                         <div className="product-amount"> 2 </div>
                         <Add />
                     </div>
-                    <div className="price"> £2.00 </div>
+                    <div className="price"> £322.00 </div>
                 </div>
             </div>       
     );

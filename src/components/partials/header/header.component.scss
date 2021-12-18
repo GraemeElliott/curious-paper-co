@@ -9,29 +9,35 @@
     display: -ms-flex;
     margin-bottom: 1rem;
     align-items: center;
-  }
 
-  .search-bar, .logo-wrapper, .account-links {
-    flex: 1;
-  }
+    .search-bar {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      align-items: center;
 
-  .search-bar {
-    display: flex;
-    align-items: center;
-
-    .search-icon {
-      margin-right: 0.3rem;
+      .search-icon {
+        margin-right: 0.3rem;
+      }
     }
-  }
 
-  .logo-img {
-    width: 26rem;
-    height: auto;
-    margin-right: 22rem;
-  }
+    .logo-wrapper {
+      margin-left: 28.3rem;    
+      margin-bottom: 1rem;
+    }
 
-  .account-link {
-    margin-right: 1rem;
+    .account-links-wrapper {
+      margin-left: auto;
+    }
+
+    .account-link {
+      margin-right: 1rem;
+    }
+
+    .cart-icon {
+      margin-right: 1rem;
+    }
   }
 
   .header-bottom-wrapper {

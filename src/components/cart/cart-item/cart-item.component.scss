@@ -40,6 +40,7 @@
     .product-amount-container {
         display: flex;
         align-items: center;
+        margin-left: auto;
 
         .product-amount {
             margin-left: 3rem;
@@ -55,6 +56,7 @@
         margin-left: 10rem;
         font-weight: 500;
         font-size: 1.4rem;
+        margin-left: auto;
 
     }
 }
