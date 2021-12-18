@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import logo from "../../../assets/cpc-logo.jpg";
 import "./header.component.scss";
 
-import { Badge } from "@mui/material";
-import { Search, ShoppingCartOutlined } from "@mui/icons-material";
+import Badge from "@mui/material/Badge";
+import Search from "@mui/icons-material/Search";
+import ShoppingCartOutlined from "@mui/icons-material/ShoppingCartOutlined";
 
 const Header = () => (
   <div className="header-container">

@@ -1,7 +1,8 @@
 import React from "react";
 import "./cart-item.component.scss";
 
-import { Add, Remove } from "@mui/icons-material";
+import Add from "@mui/icons-material/Add";
+import Remove from "@mui/icons-material/Remove";
 
 
 const CartItemComponent = () => {

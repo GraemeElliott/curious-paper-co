@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import logo from "../../../assets/cpc-logo.jpg";
 import './footer.component.scss';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
-
 const Footer = () => {
     return (
         <footer className="footer">
@@ -19,9 +16,9 @@ const Footer = () => {
             </div>
 
             <div className="social-icons">
-            <a href="/"><FontAwesomeIcon icon={faFacebook}/></a>
+            {/* <a href="/"><FontAwesomeIcon icon={faFacebook}/></a>
             <a href="/"><FontAwesomeIcon icon={faTwitter}/></a>
-            <a href="/"><FontAwesomeIcon icon={faInstagram}/></a>
+            <a href="/"><FontAwesomeIcon icon={faInstagram}/></a> */}
             </div>
 
           </div>
