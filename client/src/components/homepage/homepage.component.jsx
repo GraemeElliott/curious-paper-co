@@ -81,11 +81,11 @@ class HomepageComponent extends React.Component {
     render() {
       return (
         <div className="homepage-content-wrapper">
-          {this.state.homepagePanels.map(({ title , subtitle, imageUrl, panelFormat, panelId, linkId, colourScheme, backgroundColour}) => (
+          {this.state.homepagePanels.map(({ title , subtitle, imageUrl, panelFormat, panelId, category, linkId, colourScheme, backgroundColour}) => (
             panelFormat === "text" ?
-            <TextPanel key={panelId} title={title} subtitle={subtitle} imageUrl={imageUrl} panelFormat={panelFormat} panelId={panelId} linkId={linkId} colourScheme={colourScheme} backgroundColour={backgroundColour} />
+            <TextPanel key={panelId} title={title} subtitle={subtitle} imageUrl={imageUrl} panelFormat={panelFormat} panelId={panelId} category={category} linkId={linkId} colourScheme={colourScheme} backgroundColour={backgroundColour} />
             :
-            <ImagePanel key={panelId} title={title} subtitle={subtitle} imageUrl={imageUrl} panelFormat={panelFormat} panelId={panelId} linkId={linkId} colourScheme={colourScheme} backgroundColour={backgroundColour} />
+            <ImagePanel key={panelId} title={title} subtitle={subtitle} imageUrl={imageUrl} panelFormat={panelFormat} panelId={panelId} category={category} linkId={linkId} colourScheme={colourScheme} backgroundColour={backgroundColour} />
           ))}
         </div>
       );

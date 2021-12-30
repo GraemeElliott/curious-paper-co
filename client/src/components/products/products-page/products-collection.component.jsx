@@ -5,7 +5,6 @@ import ProductItem from "./product-item/product-item.component";
 const ProductsCollection = () => {
     return (
         <div>
-            <div className="category-title">Category Name</div>
             <div className="products-collection-wrapper">
                 <ProductItem />
                 <ProductItem />

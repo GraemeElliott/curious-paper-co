@@ -23,7 +23,7 @@ const App = () => {
             <Route exact path="/cart" component={Cart} />
             <Route exact path="/products" component={ProductsDirectoryPage} />
             <Route exact path="/products/:category" component={ProductsCollectionView} />
-            <Route exact path="/products/:category/:item" component={ProductDetailView} />
+            <Route exact path="/products/:category/:product" component={ProductDetailView} />
             </Switch>
             </div>
           <Footer />
