@@ -15,7 +15,7 @@ class HomepageComponent extends React.Component {
                 panelFormat: "text",
                 panelId: "panel-1",
                 category: "products",
-                linkId: "notebooks",
+                collectionId: "notebooks",
                 colourScheme: "dark",
                 backgroundColour:"dark-blue"
               },
@@ -26,7 +26,7 @@ class HomepageComponent extends React.Component {
                 panelFormat: "image",
                 panelId: "panel-2",
                 category: "brands",
-                linkId: "archer-and-olive",
+                collectionId: "archer-and-olive",
                 colourScheme: "light",
                 backgroundColour:""
               },
@@ -37,7 +37,7 @@ class HomepageComponent extends React.Component {
                 panelFormat: "image",
                 panelId: "panel-3",
                 category: "products",
-                linkId: "tote-bags",
+                collectionId: "tote-bags",
                 colourScheme: "dark",
                 backgroundColour:""
               },
@@ -48,7 +48,7 @@ class HomepageComponent extends React.Component {
                 panelFormat: "image",
                 panelId: "panel-4",
                 category: "products",
-                linkId: "pencil-cases-pouches",
+                collectionId: "pencil-cases-pouches",
                 colourScheme: "light",
                 backgroundColour:""
               },
@@ -59,7 +59,7 @@ class HomepageComponent extends React.Component {
                 panelFormat: "image",
                 panelId: "panel-5",
                 category: "brands",
-                linkId: "sakura",
+                collectionId: "sakura",
                 colourScheme: "light",
                 backgroundColour:""
               },
@@ -70,7 +70,7 @@ class HomepageComponent extends React.Component {
                 panelFormat: "text",
                 panelId: "panel-6",
                 category: "brands",
-                linkId: "sakura",
+                collectionId: "sakura",
                 colourScheme: "light",
                 backgroundColour:"brown"
               },
@@ -81,11 +81,11 @@ class HomepageComponent extends React.Component {
     render() {
       return (
         <div className="homepage-content-wrapper">
-          {this.state.homepagePanels.map(({ title , subtitle, imageUrl, panelFormat, panelId, category, linkId, colourScheme, backgroundColour}) => (
+          {this.state.homepagePanels.map(({ title , subtitle, imageUrl, panelFormat, panelId, category, collectionId, colourScheme, backgroundColour}) => (
             panelFormat === "text" ?
-            <TextPanel key={panelId} title={title} subtitle={subtitle} imageUrl={imageUrl} panelFormat={panelFormat} panelId={panelId} category={category} linkId={linkId} colourScheme={colourScheme} backgroundColour={backgroundColour} />
+            <TextPanel key={panelId} title={title} subtitle={subtitle} imageUrl={imageUrl} panelFormat={panelFormat} panelId={panelId} category={category} collectionId={collectionId} colourScheme={colourScheme} backgroundColour={backgroundColour} />
             :
-            <ImagePanel key={panelId} title={title} subtitle={subtitle} imageUrl={imageUrl} panelFormat={panelFormat} panelId={panelId} category={category} linkId={linkId} colourScheme={colourScheme} backgroundColour={backgroundColour} />
+            <ImagePanel key={panelId} title={title} subtitle={subtitle} imageUrl={imageUrl} panelFormat={panelFormat} panelId={panelId} category={category} collectionId={collectionId} colourScheme={colourScheme} backgroundColour={backgroundColour} />
           ))}
         </div>
       );

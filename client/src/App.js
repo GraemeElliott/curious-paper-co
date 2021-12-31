@@ -8,7 +8,9 @@ import SignInPage from "./pages/account/sign-in-register/sign-in-register";
 import ProductsDirectoryPage from "./pages/products/products-directory/products-directory";
 import ProductsCollectionView from "./pages/products/products-collection-view/products-collection-view";
 import ProductDetailView from "./pages/products/product-details-view/product-details-view";
+import HomepageCollectionView from "./pages/products/products-collection-view/homepage-collection-view";
 import Cart from "./pages/cart/cart";
+
 
 
 const App = () => {
@@ -24,6 +26,7 @@ const App = () => {
             <Route exact path="/products" component={ProductsDirectoryPage} />
             <Route exact path="/products/:category" component={ProductsCollectionView} />
             <Route exact path="/products/:category/:product" component={ProductDetailView} />
+            <Route exact path="/collection/:collectionId" component={HomepageCollectionView} />
             </Switch>
             </div>
           <Footer />

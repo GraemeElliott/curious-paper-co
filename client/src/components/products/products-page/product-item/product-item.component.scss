@@ -10,18 +10,19 @@
     position: relative;
     margin-right: 2rem;
     margin-bottom: 4rem;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+  }
   
     .product-image {
       width: 100%;
       height: 95%;
-      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: contain;
       background-position: center;
       margin-bottom: 1rem;
-
-      &:hover {
-          opacity: 0.85;
-          cursor: pointer;
-      }
     }
   
     .product-footer {
@@ -30,11 +31,6 @@
       flex-direction: column;
       align-items: center;
       font-size: 16px;
-
-      &:hover {
-        cursor: pointer;
-        opacity: 0.6;
-      }
 
       .product-details-footer {
           text-align: center;
