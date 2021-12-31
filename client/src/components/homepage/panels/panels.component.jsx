@@ -4,7 +4,7 @@ import "./panels.component.scss";
 
 const TextPanel = ({ title , subtitle, imageUrl, collectionId, colourScheme, backgroundColour }) => {
   return (
-    <Link className={`panel-wrapper text-panel ${backgroundColour}`} to={`collection/${collectionId}`}>
+    <Link className={`panel-wrapper text-panel ${backgroundColour}`} to={`collections/${collectionId}`}>
         <h3 className={`title text-subtitle ${colourScheme}`}>{subtitle}</h3>
         <h1 className={`title text-title ${colourScheme}`}> {title} </h1>
 
@@ -18,7 +18,7 @@ const ImagePanel = ({ title , subtitle, imageUrl, collectionId, colourScheme }) 
       <Link className="panel-wrapper image" style={{
         backgroundImage: `url(${imageUrl})`,
       }}
-      to={`collection/${collectionId}`}>
+      to={`collections/${collectionId}`}>
         <div className="image-panel-titles">
           <h3 className={`title image-title ${colourScheme}`}>{title}</h3>
           <h3 className={`title image-shop-link ${colourScheme}`}>SHOP NOW</h3>

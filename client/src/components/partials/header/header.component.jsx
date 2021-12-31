@@ -2,12 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/cpc-logo.jpg";
 import "./header.component.scss";
+import { useSelector } from 'react-redux';
 
 import Badge from "@mui/material/Badge";
 import Search from "@mui/icons-material/Search";
 import ShoppingCartOutlined from "@mui/icons-material/ShoppingCartOutlined";
 
-const Header = () => (
+const Header = () => {
+  const quantity = useSelector(state=>state.cart.quantity)
+  
+  return (
   <div className="header-container">
     <div className="header-top-wrapper">
       <div className="search-bar">
@@ -19,9 +23,11 @@ const Header = () => (
       </Link>
       <div className="account-links-wrapper header-text">
         <Link className="account-link" to="/sign-in">SIGN IN / REGISTER</Link>
-        <Badge className="cart-icon" badgeContent={4} color="primary">
-            <ShoppingCartOutlined color="action" />
-        </Badge>
+        <Link to="/cart">
+          <Badge className="cart-icon" badgeContent={quantity} color="primary">
+              <ShoppingCartOutlined color="action" />
+          </Badge>
+        </Link>
       </div>
     </div>
     
@@ -37,7 +43,8 @@ const Header = () => (
       </Link>
     </div>
   </div>
-);
+    )
+  };
 
 
 export default Header;

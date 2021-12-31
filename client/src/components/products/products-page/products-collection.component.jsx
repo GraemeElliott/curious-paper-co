@@ -13,7 +13,6 @@ const ProductsCollection = (category) => {
         const fetchProducts = async () => {
             try {
                 const { data } = await axios.get(`/products?category=${productCategory}`)
-
                 setProducts(data);
             } catch (err){}
         }

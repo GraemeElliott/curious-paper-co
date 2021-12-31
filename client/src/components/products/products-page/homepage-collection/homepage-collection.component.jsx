@@ -12,15 +12,14 @@ const HomepageCollection = (productCollection) => {
     useEffect(() => {
             const fetchProducts = async () => {
                 try {
-                    const { data } = await axios.get(`http://localhost:3005/products?collection=${collectionCategory}`)
+                    const { data } = await axios.get(`/products?collection=${collectionCategory}`)
                     setProducts(data)
 
             } catch (err) {}
         }
         fetchProducts();
-    }, [productCollection])
-    
-
+        // eslint-disable-next-line
+    }, [productCollection]) 
 
 
     return (
