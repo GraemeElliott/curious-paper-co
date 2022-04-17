@@ -1,1 +1,0 @@
-Remember to run two terminals, first for API, then for client side.

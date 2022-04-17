@@ -1,0 +1,99 @@
+[
+        {
+          "id": 1,
+          "productName": "Lucky Rabbit",
+          "imageUrl": "https://i.postimg.cc/c4X7hFJT/Lucky-Rabbit.jpg",
+          "description": "Test description",
+          "brand": "Archer & Olive",
+          "brandId": "archer-&-olive",
+          "itemCategory": "notebooks",
+          "subcategory": "",
+          "collection": "autumn",
+          "price": 25.00
+        },
+        {
+          "id": 2,
+          "productName": "Deep Green",
+          "imageUrl": "https://i.postimg.cc/cHRwnmjR/Deep-Green.jpg",
+          "description": "Test description",
+          "brand": "Archer & Olive",
+          "brandId": "archer-&-olive",
+          "itemCategory": "notebooks",
+          "subcategory": "",
+          "collection": "autumn",
+          "price": 29.99
+        },
+        {
+          "id": 3,
+          "productName": "Clever Fox",
+          "imageUrl": "https://i.postimg.cc/D07sdGkt/Clever-Fox.jpg",
+          "description": "Test description",
+          "brand": "Archer & Olive",
+          "brandId": "archer-&-olive",
+          "itemCategory": "notebooks",
+          "subcategory": "",
+          "collection": "",
+          "price": 24.99
+        },
+        {
+          "id": 4,
+          "productName": "Crescent Moon",
+          "imageUrl": "https://i.postimg.cc/BnRK7kf5/Crescent-Moon.jpg",
+          "description": "Test description",
+          "brand": "Archer & Olive",
+          "brandId": "archer-&-olive",
+          "itemCategory": "notebooks",
+          "subcategory": "",
+          "collection": "",
+          "price": 24.99
+        },
+        {
+          "id": 5,
+          "productName": "Lucky Rabbit Dot Grid Notebook",
+          "imageUrl": "https://i.postimg.cc/c4X7hFJT/Lucky-Rabbit.jpg",
+          "description": "Test description",
+          "brand": "Archer & Olive",
+          "brandId": "archer-&-olive",
+          "itemCategory": "notebooks",
+          "subcategory": "",
+          "collection": "autumn",
+          "price": 24.99
+        },
+        {
+          "id": 6,
+          "productName": "Deep Green",
+          "imageUrl": "https://i.postimg.cc/cHRwnmjR/Deep-Green.jpg",
+          "description": "Test description",
+          "brand": "Archer & Olive",
+          "brandId": "archer-&-olive",
+          "itemCategory": "notebooks",
+          "subcategory": "",
+          "collection": "autumn",
+          "price": 29.99
+        },
+        {
+          "id": 7,
+          "productName": "Clever Fox",
+          "imageUrl": "https://i.postimg.cc/D07sdGkt/Clever-Fox.jpg",
+          "description": "Test description",
+          "brand": "Archer & Olive",
+          "brandId": "archer-&-olive",
+          "itemCategory": "notebooks",
+          "subcategory": "",
+          "collection": "",
+          "price": 24.99
+        },
+        {
+          "id": 8,
+          "productName": "Crescent Moon",
+          "imageUrl": "https://i.postimg.cc/BnRK7kf5/Crescent-Moon.jpg",
+          "description": "Test description",
+          "brand": "Archer & Olive",
+          "brandId": "archer-&-olive",
+          "itemCategory": "notebooks",
+          "subcategory": "",
+          "collection": "",
+          "price": 24.99
+        }
+]
+    
