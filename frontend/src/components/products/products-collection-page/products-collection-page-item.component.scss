@@ -1,0 +1,31 @@
+.product-item {
+  width: 33%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  align-items: center;
+  margin-bottom: 15rem;
+
+}
+
+.product-image {
+  height: 100%;
+}
+
+.product-footer {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  align-items: center;
+
+  span {
+    margin-bottom: 1rem;
+  }
+
+  .brand {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+}

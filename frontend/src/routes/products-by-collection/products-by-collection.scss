@@ -1,0 +1,9 @@
+.collection-preview {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
