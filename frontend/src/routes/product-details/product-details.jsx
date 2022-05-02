@@ -10,6 +10,7 @@ import { publicRequest } from "../../requestMethods";
 const ProductDetails = () => {
   const productId = useLocation().pathname.split("/")[3];
   const [product, setProduct] = useState({});
+  // eslint-disable-next-line
   const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
 
