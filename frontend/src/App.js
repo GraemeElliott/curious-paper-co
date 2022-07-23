@@ -10,6 +10,8 @@ import ProductsByBrand from './routes/products-by-brand/products-by-brand';
 import ProductsByCollection from './routes/products-by-collection/products-by-collection';
 import ProductDetails from './routes/product-details/product-details';
 import Cart from './routes/cart/cart';
+import Pay from './routes/checkout/pay/pay';
+import Success from './routes/checkout/checkout-success/checkout-success';
 
 import './App.css';
 
@@ -33,6 +35,8 @@ function App() {
           <Route path="/brands/*" element={<ProductsByBrand />} />
           <Route path="/collection/*" element={<ProductsByCollection />} />
           <Route path="/cart/" element={<Cart />} />
+          <Route path="/pay/" element={<Pay />} />
+          <Route path="/success/" element={<Success />} />
       </Routes>
     </div>
     <Footer />

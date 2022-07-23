@@ -1,21 +1,46 @@
-import { React, useEffect } from "react";
+import { React, useState, useEffect } from "react";
 import './order-summary.component.scss';
 import CustomButton from "../partials/custom-button/custom-button";
 import {useSelector} from "react-redux";
 import { useDispatch } from 'react-redux';
 import { getTotals } from "../../redux/Reducers/cartRedux";
+import StripeCheckout from "react-stripe-checkout";
+import { useNavigate } from "react-router-dom";
+import { userRequest } from "../../requestMethods";
 
-
-
+const stripeKey = process.env.REACT_APP_STRIPE_PUBLIC_KEY
 
 const OrderSummary = () => {
     const cart = useSelector(state=>state.cart)
     const dispatch = useDispatch();
-
-    useEffect(() => {
+    const [stripeToken, setStripeToken] = useState(null)
+    const navigate = useNavigate();
+  
+    const onToken = (token) => {
+      setStripeToken(token)
+    };
+  
+    useEffect (() => {
         dispatch(getTotals());
 
-    }, [cart, dispatch])
+      const makeRequest = async () => {
+        try {
+          const res = await userRequest.post("/checkout/payment",
+            {
+              tokenId: stripeToken.id,
+              amount: cart.cartTotalAmount*100            
+            }
+          )
+            console.log (res.data)
+            // navigate('/')
+  
+        } catch (error) {
+          console.log (error)
+  
+        }
+      }
+      stripeToken && makeRequest();
+    }, [stripeToken, navigate, cart.cartTotalAmount, cart, dispatch])
 
     return (
     
@@ -35,7 +60,17 @@ const OrderSummary = () => {
                 <h2 className="total-amount order-summary-amount"> £{cart.cartTotalAmount < 30 ? (cart.cartTotalAmount + 5.99).toFixed(2) : cart.cartTotalAmount.toFixed(2)} </h2>
             </div>
         </div>
-        <CustomButton className="custom-button checkout-button"> Checkout</CustomButton>
+            <StripeCheckout
+            name="Curious Paper Co."
+            amount={cart.cartTotalAmount*100}
+            billingAddress
+            shippingAddress
+            token={onToken}
+            stripeKey={stripeKey}
+            >
+            <CustomButton className="custom-button checkout-button"> Checkout</CustomButton>
+            </StripeCheckout>
+        
 
     </div>       
     );
