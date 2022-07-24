@@ -8,6 +8,7 @@ const authenticationRoute = require ("./routes/authentication");
 const productRoute = require ("./routes/product");
 const cartRoute = require ("./routes/cart");
 const orderRoute = require ("./routes/order");
+const paymentRoute = require ("./routes/payment");
 
 dotenv.config();
 
@@ -27,6 +28,7 @@ app.use("/brands", productRoute);
 app.use("/collection", productRoute);
 app.use("/cart", cartRoute);
 app.use("/orders", orderRoute);
+app.use("/checkout", paymentRoute);
 
 
 app.listen(process.env.PORT || 5000, () => {
