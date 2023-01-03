@@ -1,7 +1,8 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import bodyParser from 'body-parser';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 import singleProductRouter from './routes/single-product.js';
 import productRouter from './routes/product.js';
@@ -9,9 +10,17 @@ import userRouter from './routes/user.js';
 import orderRouter from './routes/order.js';
 import uploadRouter from './routes/upload.js';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.join(__filename, '../');
+console.log('directory-name 👉️', __dirname);
+
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.get('/api/keys/paypal', (req, res) => {
+  res.send(process.env.PAYPAL_CLIENT_ID || 'sb');
+});
 
 dotenv.config();
 
@@ -32,6 +41,11 @@ app.use('/product', singleProductRouter);
 app.use('/products', productRouter);
 app.use('/users', userRouter);
 app.use('/orders', orderRouter);
+app.use(express.static('../frontend/build'));
+
+app.get('*', (req, res) =>
+  res.sendFile(path.resolve(__dirname, 'frontend', 'build'))
+);
 
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
