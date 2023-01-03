@@ -1,0 +1,17 @@
+{
+  "name": "curious-paper-co",
+  "version": "1.0.0",
+  "description": "some description",
+  "main": "./backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd ./backend && node server.js"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

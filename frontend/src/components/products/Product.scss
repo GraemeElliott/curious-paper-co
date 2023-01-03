@@ -1,0 +1,46 @@
+.product {
+  border: 1px #404040 solid;
+  margin: 1rem;
+}
+
+.product-card {
+  height: 38rem;
+  border: none;
+  margin-top: 2rem;
+}
+
+.product img {
+  width: 100%;
+  max-width: 40rem;
+}
+
+.product-info {
+  padding: 1rem;
+}
+
+.btn-primary {
+  background-color: #ffff;
+  border: 1px solid #000;
+  border-radius: 0;
+  color: #000000;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.btn-product-listing {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+}
+
+.brand-link {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.product-card-img {
+  height: 320px;
+}

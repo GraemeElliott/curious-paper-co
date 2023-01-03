@@ -1,0 +1,23 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.navbar-img {
+  flex: 0 1;
+}
+
+.nav-cart {
+  margin-right: 1rem;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.dropdown-menu {
+  border: 1px black solid;
+  border-radius: 0px;
+}

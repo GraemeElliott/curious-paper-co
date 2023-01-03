@@ -1,0 +1,20 @@
+div {
+  margin: 0rem;
+}
+
+.homepage-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .panel-wrapper {
+    width: 340px !important;
+    height: 780px;
+  }
+
+  .homepage-wrapper {
+    margin-left: 2rem;
+  }
+}
